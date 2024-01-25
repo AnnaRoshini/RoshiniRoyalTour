@@ -1,12 +1,12 @@
 <?php
-include "db.php";
+include "db.html";
 
 if(isset($_POST["submit"])){
     $username = $_POST['username'];
     $password = $_POST['password'];
 
     if($username === "admin" && $password==="123"){
-        header("location:Dashbord/pages\dashboard.php");
+        header("location:Dashbord/pages\dashboard.html");
     }
     else {
         $stmt = $db->prepare("SELECT * FROM `customer` WHERE username=?");
@@ -16,7 +16,7 @@ if(isset($_POST["submit"])){
         if($stmtresult->num_rows>0){
             $data = $stmtresult->fetch_assoc();
             if($data["password"]===$password){
-                header("location:packages.php");
+                header("location:packages.html");
             }
             else{
                 $message = "Loging unsucessful";
@@ -73,7 +73,7 @@ if(isset($_POST["submit"])){
             <input type="password" id="password" name="password" class="form-control">
         </div>
         <button class="btn" name="submit" value="Log In">Submit</button>
-        <p class="signup-text">Don't have an account?<a href="signup.php">SignUp Here</a></p>
+        <p class="signup-text">Don't have an account?<a href="signup.html">SignUp Here</a></p>
     </form>
 </div>
 </div>    

@@ -1,5 +1,5 @@
 <?php
-include "db.php";
+include "db.html";
 
 if(isset($_POST["submit"])){
     $name = $_POST['name'];
@@ -91,7 +91,7 @@ if(isset($_POST["submit"])){
             <input type="password" placeholder="Comfirm Password" id="cpassword" name="cpassword" class="form-control" value="" required>
         </div>
         <button class="btn" name="submit" value="Sign Up">Submit</button>
-        <p class="signup-text">Have an account?<a href="login.php">Login Here</a></p>
+        <p class="signup-text">Have an account?<a href="login.html">Login Here</a></p>
     </form>
 </div>
 </div>    
