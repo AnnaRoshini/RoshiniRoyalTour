@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Condiment-Regular
+font link: https://fonts.google.com/specimen/Condiment
+font author: Sudtipos
+font author site: https://www.sudtipos.com/
+
+
+icon designer: Rachel Healey
+icon designer link: /rkhealey
+        
+{"bg":"#E1F4FC","icon-gradient-0":"#0D7CE9","icon-gradient-1":"#15CFF1","font":"#08374E","slogan":"#1c4b62"}
+      
